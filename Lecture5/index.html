@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Semantic Tags -->
+    <!-- h1 to h6 tags for different types of heading -->
+    <!-- style attribute used with h1 tag to create a aqua colored bg behind the h1 heading -->
+    <h1 id="Main Heading" style="background-color: aqua;">This is my first heading
+        and I am writing this in the next line
+    </h1>
+    <h2 style="color: brown;">This is my second heading</h2>
+    <h3>This is my third heading</h3>
+    <h4>This is my fourth heading</h4>
+    <h5>This is my fifth heading</h5>
+    <h6>This is my sixth heading</h6>
+    <!-- Paragraph tag for paragraph texts -->
+    <p>This is my first para</p>
+    <!-- anchor tag to create bookmarks,hyperlinks,etc in the below tag href is the attribute of the anchor tag -->
+    <a href="https://google.com">Click here</a>
+    <!-- unordered lists tag-->
+    <ul id="Unordered List">
+        <!-- li tags for list items -->
+        <li>Paneer</li>
+        <li>Dudh</li>
+        <li>Dahi</li>
+        <li>Ghee</li>
+    </ul>
+    <!-- Ordered List tag short cut ol>li*number of list items needed -->
+    <ol id="Ordered List">
+        <li>Paneer</li>
+        <li>Dudh</li>
+        <li>Dahi</li>
+        <li>Ghee</li>
+    </ol>
+    <!-- The difference bw ordered and unordered list lies in the semantics not in display in unordered the list items may appear in a random order in ordered list the list items appear in defined order only -->
+    <!-- Table tag for creating a table -->
+
+    <!-- Description list tag followed by dt(title)tag and dd(description) tag -->
+    <p><b>Different Royal Enfield Bike Variants</b></p><br>
+    <dl id="Description List">
+        <dt>Royal Enfield Classic </dt>
+        <dd>Available in BS6 350cc</dd><br>
+        
+        <dt>Meteor</dt>
+        <dd>Available in 350 and 500cc</dd><br>
+        
+        <dt>Interceptor and Continental GT</dt>
+        <dd>Available in 650cc</dd>
+    </dl>
+    <table id="Table">
+        <!-- tr tag for defining table rows -->
+        <tr>
+            <!-- td for table data -->
+            <td>Sr.NO</td>
+            <td>Name</td>
+            <td>Roll NO</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Aryan</td>
+            <td>3546</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Archit</td>
+            <td>2996</td>
+        </tr>
+    </table>
+    <!-- table>(tr>td*3)*3 shortcut for creating the upper table taglines in one go -->
+
+    <!-- img tag for inserting image to your webpage where src and alt are the attributes src means source link and alt means alternate text if the image by any issue isnt being displayed in the webpage -->
+    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4D03AQEc4XT_CVWQjw%2Fprofile-displayphoto-shrink_200_200%2F0%2F1702119495684%3Fe%3D2147483647%26v%3Dbeta%26t%3D5_dT723XKXQMwA5fJm-DBMizyC5IMnb1H4hFGvNzpaE&tbnid=AMs5ZalYZAn1_M&vet=12ahUKEwjcgMqvrJuDAxVImGMGHbjWAy0QMygEegQIARBV..i&imgrefurl=https%3A%2F%2Fin.linkedin.com%2Fpub%2Fdir%2FAryan%2FThapa%2Fin-0-India&docid=7-HcFxBsHks80M&w=200&h=200&itg=1&q=aryan%20thapa&ved=2ahUKEwjcgMqvrJuDAxVImGMGHbjWAy0QMygEegQIARBV" alt="My Image">
+
+<!-- Formatting tags -->
+    <p>Lorem, <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Officiis nesciunt neque rem reprehenderit et beatae, doloremque, deserunt accusantium ipsam laborum maxime consequatur obcaecati omnis dolorum magni harum illum modi vero vel nostrum quibusdam praesentium itaque. Voluptatibus voluptas doloremque quis iusto itaque alias expedita, aspernatur quas aut eos officiis ipsam perferendis!</p>
+    <!-- strong or bold<b> tag can be used to make it bold but the difference is strong tag adds a meaning to your word or text inside it -->
+    <p><em>Lorem</em> ipsum <s>strike tag</s> <i>italic tag</i> <u>underline tag</u> dolor sit amet consectetur adipisicing elit. Enim perspiciatis temporibus quasi atque officiis unde magnam, animi minima dicta ut exercitationem, libero alias cum vero quisquam eius repellat! Ad, expedita assumenda quasi repudiandae nihil quisquam omnis cumque voluptatum autem eum modi. Ducimus similique est voluptatum animi tempora nisi ab reprehenderit.</p>
+    <!-- <em>emphasize tag in the same way <i> italic tag,<u> underline tag and <s> strike tag with the text for different tasks  -->
+    <p>
+        <!-- 2 ki power 5 -->
+        2<sup>5</sup>
+        <!-- O2(oxygen) -->
+        O<sub>2</sub>
+    </p>
+    <!-- Text inside Pre tag is shown as it is in the website as it is written inside the tag we dont need to use any break<br> tag to move the content to the next line like h1 or any other header tag -->
+    <pre>
+        Hi I am Aryan Thapa.
+        I am from Dehradun.
+    </pre>
+
+
+    <!-- Home work lec-5 -->
+    <!-- creating a bookmark to reach different section in your webpage by adding id of tags after # inside "" -->
+    <a href="#Main Heading">Main Heading</a>
+    <a href="#Unordered List">Unordered List</a>
+    <a href="#Ordered List">Ordered List</a>
+    <a href="#Description List">Description List</a>
+
+    <!-- Aside Tag vs section tag -->
+    <!-- The <aside> tag is used to define content that is tangentially related to the content around it. 
+        It's typically used for content that is considered secondary or complementary to the main content 
+        but not essential to understand it.Examples of content that might go inside an <aside> tag include 
+        sidebars, pull quotes, advertisements, or other content that is related to the main content but 
+        doesn't need to be inline. -->
+    <article>
+        <h2>Article Title</h2>
+        <p>Main content of the article.</p>
+        <aside>
+            <p>Additional information or related content.</p>
+        </aside>
+    </article>
+<!-- The <section> tag is used to define sections in a document. It's a generic container that is often 
+    used to group together related content. A section can have its own heading and may contain other 
+    sections, articles, or any other HTML content.The purpose of the <section> tag is to aid in document 
+    structure and organization, making it clearer and more semantically meaningful. -->
+<h2>Choosing an Apple</h2>
+<section>
+  <h3>Introduction</h3>
+  <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+</section>
+<section>
+  <h3>Criteria</h3>
+  <p>
+    There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness,
+    tartness...
+  </p>
+</section>
+
+</body>
+</html>
