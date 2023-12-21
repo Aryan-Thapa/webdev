@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <!-- 1st Is it possible to select multiple options in a dropdown menu?if yes how? -->
+        <!-- No, a standard HTML dropdown (<select> element) does not allow selecting 
+    multiple options by default. However, if you want to enable users to 
+    select multiple options, you can use the multiple attribute along with 
+    the size attribute to define the number of visible options. -->
+        <select name="Dishes" id="dishes" multiple size="2">
+            <option value="Doodh">Doodh</option>
+            <option value="Dahi">Dahi</option>
+            <option value="Ghee">Ghee</option>
+        </select>
+        <br>
+        <br>
+        <!--How can you select only one radio button??
+        ans: by defining same name for all inputs  -->
+        <!-- radio buttons -->
+        <label for="radiobutton">Male</label>
+        <input type="radio" id="radiobutton" name="gender">
+        <label for="radiobutton2">Female</label>
+        <input type="radio" id="radiobutton2" name="gender">
+        <label for="radiobutton2">jaat</label>
+        <input type="radio" id="radiobutton3" name="gender">
+        
+    </form>
+</body>
+</html>

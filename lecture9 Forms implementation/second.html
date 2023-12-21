@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h2 >Job Application</h2>
+            <label for="Text1">Name:</label><br>
+            <input type="text" id="Text1"><br><br>
+            <label for="Email">Email:</label><br>
+            <input type="email" id="Email"><br><br>
+            <label for="Phone">Phone:</label><br>
+            <input type="tel" id="Phone"><br><br>
+            <label for="File">Resume:</label><br>
+            <input type="file" id="File"><br><br>
+            <label for="Experience">Experience(years)</label>
+            <input type="number" name="counter" id="Experience" min="0" max="50">
+            <fieldset>
+                <legend>Skills:</legend>
+                <input type="checkbox" id="skill1"><br>
+                <label for="skill1">HTML</label><br>
+                <input type="checkbox" id="skill2"><br>
+                <label for="skill2">CSS</label><br>
+                <input type="checkbox" id="skill3"><br>
+                <label for="skill3">Javascript</label>
+            </fieldset>
+            <br><br>
+            <label for="Educ">Highest Education:</label>
+            <select name="Educ" id="Educ">
+                <option value="school">High School</option>
+                <option value="bachelors">Bachelors Degree</option>
+                <option value="masters">Masters Degree</option>
+                <option value="PHD">PHD</option>
+            </select><br><br>
+            <label for="avail">Availability:</label><br><br>
+            <input type="radio" id="avail" name="avail"><br>
+            <label for="avail">Full-time</label><br>
+            <input type="radio" id="avail" name="avail"><br>
+            <label for="avail">Part-time</label><br><br>
+            <label for="textarea">Additional Comments:</label><br>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Apply">
+        </fieldset>
+    </form>
+</body>
+</html>
