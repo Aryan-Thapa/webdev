@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*universal selector
+        *{
+            padding: 0;
+            margin: 0;
+        }*/
+        h1{
+            text-align: center;
+            background-color: aquamarine;
+            /*border-style: solid;
+            border-width: 2px;
+            border-color: brown;*/
+            border: solid brown 2px;
+            /*border-radius: 50px; corners rounded*/
+            border-radius:5px;
+            border-top: solid yellowgreen 2px;
+            border-bottom: solid brown 5px;
+            width: 350px;
+            margin-left: 100px;
+        }
+        .first{
+            background-color: blanchedalmond;
+            border: solid black 3px;
+            width: 650px;
+        }
+        .second{
+            background-color: rgba(175, 72, 158, 0.412);
+            border: solid black 3px;
+            width: 650px;
+        }
+        .third{
+            background-color: rgba(55, 78, 129, 0.375);
+            border: solid black 3px;
+            width: 650px;
+        }
+        span{
+            background-color: rgba(95, 158, 160, 0.606);
+            border: solid red 3px;
+            height: 350px;
+            width: 650px;
+            margin-left: 220px;
+        }
+        #pad{
+            border: solid black 5px;
+            padding: 90px;
+            width: 350px;
+            text-align: center;
+            margin: 50px;
+            background-color: burlywood;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Welcome to Codehelp
+    </h1>
+    <!-- HW why height and width isnt applied to span tag
+     Box sizing property??-->
+    <span>This is a webdev course</span>
+
+    <p class="first">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eveniet et id omnis tempora a non dolore, laboriosam nesciunt debitis natus quidem optio. Totam sapiente culpa cumque voluptatem harum hic eligendi laborum, iusto, veritatis exercitationem amet quaerat. Porro, impedit nulla?
+    </p>
+
+    <p class="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae delectus hic facere voluptatibus officiis voluptatem fuga, saepe alias qui quidem, suscipit velit est reiciendis, quos consequatur debitis adipisci voluptas.
+    </p>
+
+    <p class="third">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, adipisci quas! Fuga error nemo temporibus, dolore numquam incidunt voluptas sequi, rem, ut beatae provident consectetur!
+    </p>
+
+    <!-- Box Model -->
+    <!-- Jo bhi cheez hum render karana chahte hai apne web page mai woh ek 
+    rectangular box ke shape mai render hua hai -->
+    <!-- box model ke 4 part hai
+    1) Content 2)Padding 3)Border 4)Margin -->
+    <!-- Sabse pehle content aata hai fir ek layer aati hai woh padding hoti hai fir border ki layer fir last layer margin ki hoti 
+    inn 4 layer mai box render hota hai -->
+    <p id="pad">Hi this is content</p>
+    <!-- 2 box ke bich ke gap ko margin bolte hai -->
+
+
+
+
+
+
+
+</body>
+</html>

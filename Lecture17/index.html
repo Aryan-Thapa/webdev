@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin: 10px;
+        }
+        .class{
+            border: solid red 2px;
+        }
+        /*relative positioning*/
+        .img1{
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+        <img src="image1.jpg" alt="car1" width="300px" height="400px" class="img1">
+        <img src="image2.jpg" alt="car1" width="300px" height="400px" class="img2">
+        <img src="image3.jpg" alt="car1" width="300px" height="400px" class="img3">
+        <img src="image4.jpg" alt="car1" width="300px" height="400px" class="img4">
+        <img src="image5.jpg" alt="car1" width="300px" height="400px" class="img5">
+    </div>
+</body>
+</html>
+
+<!-- Answers to the homework questions : 
+1. img tag is an inline element, but it behaves like an inline-block.
+2. Property used for the contact button is fixed as it's position remains intact for the whole window.
+
+Things learnt today : 
+1. CSS Position properties :
+ I. Static (default)
+II. Relative (relative with respect to the current window)
+III. Absolute (relative to closest positional ancestor)
+IV. Fixed
+V. Sticky
+2. The gap of the image's space in relative positioning earlier remains intact after applying styles like margin etc., while in the absolute positioning, the gap of the image's space is covered by the nearest element.
+3. In the fixed positioning, the element remains in it's initially allotted position in the entire webpage.
+     In the sticky positioning, the element remains in it's initially allotted position within it's current parent only. For sticky positioning, the position should be marked at the starting. -->

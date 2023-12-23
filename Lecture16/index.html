@@ -1,0 +1,73 @@
+<!-- CSS display property -->
+<!-- Display property ke dwara kisi ek element ko display ya viewport
+pe kaise render karana hai woh display property ka kaam hai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            border: solid black 1px;
+            padding: 100px;
+        }
+        #span{
+            border: solid red 2px;
+            width: 200px;
+            height:150px;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        Welcome to this webpage
+    </div>
+
+    <div>
+        Welcome again
+    </div> -->
+    <div class="box">
+        Welcome to codehelp
+    </div> <br><br>
+
+    <span id="span">This is a span tag which is a inline element</span>
+</body>
+</html>
+
+<!-- Properties of Block element
+1)Block element comes in New Line
+2)Takes the entire width of the webpage by default
+3)Respects the custom width and height
+4)Respects Custom margin
+HW 10 different block elements  -->
+
+<!-- Box sizing border box add karne se padding or margin add
+karne se box ki actual width or height pe asar nahi padega that is actual box apni size retain karega -->
+
+<!-- inline eg span and anchor tags
+properties:
+1)They try to come in one line if width is available
+2)by default width depends on the content
+3)We cannot apply custom width and height to it
+4)Custom Margins can be applied only in horizontal direction
+not in vertical direction and padding can be applied   -->
+
+<!-- Can we convert inline elements to block elements??
+Answer is yes just add display: block in the style of inline elements -->
+
+<!-- Inline Block element
+mixture of both inline and block
+it behaves like inline but custom width height 
+can be used in this element -->
+
