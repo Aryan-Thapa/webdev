@@ -1,0 +1,79 @@
+<!-- CSS size units
+1)Absolute unit
+2)Relative unit-->
+
+<!-- % depends on parent -->
+<!-- viewport 100vw (viewwidth) 100vh viewheight -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*{
+            margin: 0px;
+        }
+        .Parent{
+            border: solid red 2px;
+            width: 100%;
+            color: rgb(244, 10, 10);
+            background-color: aqua;
+        }
+        .child{
+            border: solid green 2px;
+            background-color: cadetblue;
+            width: 25%;
+        }
+        .container{
+            border: solid red 2px;
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+        }
+        .wrapper {
+            font-size: 1em;
+          }
+          
+          .px {
+            width: 200px;
+          }
+          
+          .vw {
+            width: 10vw;
+          }
+          
+          .em {
+            width: 10em;
+          }*/
+          .firstpara{
+            border: solid black 2px;
+            font-size: 5rem;/*rem depends on root element by default size of root element is 16px therefore 5rem means 16*5=80px*/
+          }
+          .container{
+            font-size: 10px;
+          }
+          .box{
+            font-size: 10em;
+          }/*10 em means 10*size of parent(10px in this case)hence the size of box container becomes 10*10px=100px*/ 
+    </style>
+</head>
+<body>
+    <!-- <div class="Parent">
+        <div class="child">
+            Welcome to codehelp
+        </div>
+    </div> -->
+
+    <!-- <div class="container">
+        Welcome to codehelp
+    </div> -->
+    <p class="firstpara">Hello ji</p>
+
+    <!-- <div class="container">
+        <div class="box">
+            Welcome to codehelp
+        </div>
+    </div> -->
+</body>
+</html>

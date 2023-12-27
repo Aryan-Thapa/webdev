@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: solid black 1px;
+            background-color: grey;
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+        }
+        .boxleft{
+            background-color: aquamarine;
+            border: solid black 1px;
+            width: 50%;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        .boxright{
+            background-color: yellow;
+            width: 49%;
+            margin: 3px;
+            padding: 2px;
+        }
+        img{
+            height: 300px;
+            width: 200px;
+        }
+        p{
+            border: 1px solid red;
+        }
+        @media (max-width:640px)
+        {
+            .container{
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxleft">
+            <p>Text1</p>
+            <p>text2</p>
+        </div>
+        <div class="boxright">
+            <img src="/Lecture19/bhagatsingh.jpg" alt="bsinghji">
+        </div>
+    </div>
+</body>
+</html>

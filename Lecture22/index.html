@@ -1,0 +1,65 @@
+<!-- Box shadow when used with 2 parameters means Xoffset and Yoffset
+when third used means blur radius and fourth parameter means spread radius -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*now these custom variables can be used wherever you want*/
+        :root{
+            --primary-color:brown;
+            --custom-width:500px;           
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: solid black 2px;
+            margin: 3px;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /*for now the scope of custom variable is inside this box only
+            to make the scope bigger we can define these variable inside root*/
+            /*creating a custom variable*/
+            --primary-color:brown;
+            --custom-width:500px;
+            background-color:aquamarine;
+            /*using custom variable using var()*/
+            width: var(--custom-width);
+            height: 500px;
+            border: solid var(--primary-color) 1px;
+            margin: 3px;
+            padding: 3px;
+            box-shadow: 7px 7px grey;
+            /*box-shadow: 7px 7px 7px grey;
+            box-shadow: 7px 7px 7px 7px;
+            adds the shadow inside the container
+            box-shadow: inset 7px 7px grey;
+            adding two different shadows 
+            box-shadow: 10px 15px red, 15px 8px grey;*/
+        }
+        img{
+            height: 150px;
+            width: 300px;
+        }
+        #heading{
+            /*same as box shadow for text*/
+            text-shadow: 4px 3px grey,2px 3px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="/Lecture19/maharana.jpg" alt="MP">
+            <h2 id="heading">Maharana Pratap</h2>
+            <p>Maharana Pratap Singh Sisodia (Absent Shukla Tritiya Sunday Vikram Samvat 1597 accordingly 9 May 1540 – 19 January 1597) Udaipur, Mewar in Sisodia Dynasty Was king of।[4] His name History I am immortal for valor, valor, sacrifice, might and wisdom। He turned away Akbar Did not accept the subordination of and struggled for many years, eventually I failed to subjugate Akbar Maharana Pratap। Maharana Pratap's policies Shivaji Maharaj From the British became the inspiration for Bengal's freedom fighters।</p>
+        </div>
+    </div>
+</body>
+</html>

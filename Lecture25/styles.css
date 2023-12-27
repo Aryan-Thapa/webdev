@@ -1,0 +1,30 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: solid black 2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 3s linear 0s;
+}
+.box:hover{
+    /*transform: scale(0.5);
+    transform: rotate(45deg);
+    transform: skew(-90deg);*/
+    transform: translate(0px,500px);
+}
+p{
+    font-size: 36px;
+}
+/* Extra properties are:
+1. Putting X,Y or Z at the end of translate(), scale(), and skew() help us to make the transition in these directions.
+2. "transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())"- a shorthand notation */
