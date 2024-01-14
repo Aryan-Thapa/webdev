@@ -1,0 +1,46 @@
+<!-- Dom Manipulation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 1rem;
+        }
+        .red{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;" class="container">
+        <div class="box">
+            Hey I am a box
+        </div>
+        <div class="box">
+            Hey I am a box
+        </div>
+    </div>
+
+    <script>
+        /*let div=document.createElement("div");
+        div.innerHTML="Hi I am being inserted by <b>Aryan</b>";
+        div.setAttribute("class","create");
+        document.querySelector(".container").append(div); */
+        /*you can use other methods like before after to add the created element before or after selected element check notes for other methods*/
+
+        let cont=document.querySelector(".container");
+        cont.insertAdjacentHTML("beforebegin","<b>Hello I am under da water here too much raining pls help me iooouuuuuuuuu");
+        
+        
+        let head=document.createElement("h1");
+        head.setAttribute("style","color:red")
+        head.innerHTML="Hi I am a heading and I just got inserted";
+        document.querySelector(".container").append(head);
+        document.querySelector(".container").classList.toggle("red");
+    </script>
+</body>
+</html>
