@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wedenesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+    console.log("parent:", parent);
+    console.log("children:", parent.children); //returns an HTML Collection which is an array like property
+    console.log(
+      "INNER HTML of children on first index:",
+      parent.children[1].innerHTML
+    );
+    /*for(let i = 0; i < parent.children.length; i++) {
+      console.log(parent.children[i].innerHTML);
+    }*/
+
+    parent.children[1].style.color="orange"
+    console.log(parent.firstElementChild); //logs the first child of the parent element
+    console.log(parent.lastElementChild); //logs the last element of the parent element 
+    const dayOne = document.querySelector('.day'); //logs the first element of day class
+    console.log(dayOne);
+    console.log(dayOne.parentElement); //logs the parent element of the day class
+    console.log(dayOne.nextElementSibling); //logs the next element with day class in this case tuesday
+
+    console.log("NODES",parent.childNodes); //linebreaks are also counted as nodes
+  </script>
+</html>
