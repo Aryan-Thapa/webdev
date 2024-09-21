@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-1 Color changer</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <div
+      class="container"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 90vh;
+      "
+    >
+      <header>
+        <h1>Color Scheme Switcher</h1>
+      </header>
+
+      <div
+        class="colorchanger"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div class="buttoncontainer">
+          <button
+            class="button"
+            id="grey"
+            style="
+              height: 2rem;
+              width: 4rem;
+              border-radius: 5px;
+              background-color: grey;
+            "
+          ></button>
+          <button
+            class="button"
+            id="white"
+            style="
+              height: 2rem;
+              width: 4rem;
+              border-radius: 5px;
+              background-color: white;
+            "
+          ></button>
+          <button
+            class="button"
+            id="blue"
+            style="
+              height: 2rem;
+              width: 4rem;
+              border-radius: 5px;
+              background-color: blue;
+            "
+          ></button>
+          <button
+            class="button"
+            id="yellow"
+            style="
+              height: 2rem;
+              width: 4rem;
+              border-radius: 5px;
+              background-color: yellow;
+            "
+          ></button>
+        </div>
+
+        <div class="text">
+          <p>
+            Try clicking on one of the colors above to change the background
+            color of this page!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="ColorChanger.js"></script>
+  </body>
+</html>
