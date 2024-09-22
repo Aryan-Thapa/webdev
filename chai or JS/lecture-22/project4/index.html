@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+      "
+    >
+      <header>
+        <h1>Number Guessing Game</h1>
+        <p>Try and guess a random number between 1 and 100.</p>
+        <p>You have 10 attempts to guess the right number.</p>
+      </header>
+
+      <body>
+        <form action="" style="display: flex; flex-direction: column; gap: 1rem; background-color: grey; padding: 3rem; border-radius: 10px;">
+          <label for="guess" style="font-size: x-large;">Guess a Number!!!</label>
+          <input type="text" id="guess" style="border-radius: 4px; padding: 7px;" />
+          <input type="submit" value="Submit Guess" style="border-radius: 4px; padding: 7px; cursor: pointer;" id="submitGuess" />
+        </form>
+      </body>
+
+      <footer style="background-color: grey; padding: 1.5rem;width:27rem; border-radius:12px">
+        <p id="prevGuess">Previous Guesses: </p>
+        <p id="remGuess">
+          Remaining Guesses: <span id="remGuessCount">10</span>
+        </p>
+        <p id="guessMessage"></p>
+        <p id="newGame"></p>
+      </footer>
+    </div>
+    <script src="GuessNumber.js"></script>
+  </body>
+</html>
