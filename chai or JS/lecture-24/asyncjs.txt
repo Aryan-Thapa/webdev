@@ -1,0 +1,7 @@
+Javascript is synchronous and single threaded by default 
+
+Execution context->execute one line of code at a time
+
+Blocking code vs non blocking code
+Blocking code -> Blocks the flow of the program
+Non Blocking code -> doesnt block the flow of the program.
