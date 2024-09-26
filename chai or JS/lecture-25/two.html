@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async JS</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <h1>Async JS</h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+    <script>
+      const sayDate = (str) => {
+        const date = new Date();
+        console.log(str, date.toLocaleTimeString());
+      };
+      const startBtn = document.getElementById("Start");
+      const stopBtn = document.getElementById("Stop");
+      let intervalID;
+      const startEvent=startBtn.addEventListener("click",()=>{
+        intervalID=setInterval(sayDate, 1000, "Hi");
+      })
+      stopBtn.addEventListener("click",()=>{
+        clearInterval(intervalID)
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async JS</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <h1>Async JS</h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+    <script>
+      const changeHeading = () => {
+        document.querySelector("h1").innerHTML = "Asynchronous JS";
+      };
+      const timeoutFunc = setTimeout(changeHeading, 3000);
+      const btn = document.getElementById("Stop");
+      btn.addEventListener("click",()=>{
+        clearTimeout(timeoutFunc);
+        console.log("Timeout function stopped!!");
+      })
+    </script>
+  </body>
+</html>
