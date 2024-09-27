@@ -12,11 +12,14 @@ const randomColor = () => {
 
 let colorChanger;
 document.getElementById("startBtn").addEventListener("click", () => {
-  colorChanger = setInterval(() => {
-    document.body.style.backgroundColor = randomColor();
-  }, 1000);
+  if (colorChanger==null) {
+    colorChanger = setInterval(() => {
+      document.body.style.backgroundColor = randomColor();
+    }, 1000);
+  }
 });
 
 document.getElementById("stopBtn").addEventListener("click", () => {
   clearTimeout(colorChanger);
+  colorChanger = null;
 });
