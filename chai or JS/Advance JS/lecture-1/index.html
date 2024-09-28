@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api Request</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <div>
+      <div style="width: 100%; display: flex; gap: 1rem; flex-wrap: wrap;" id="cardContainer">
+        <div
+          class="card"
+          style="
+            background-color: aliceblue;
+            color: black;
+            width: 20rem;
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 25px;
+          "
+        >
+          <h1>Your Github Info</h1>
+          <img
+            style="width: 10rem; height: 10rem; border-radius: 10px"
+            src="https://avatars.githubusercontent.com/u/132425739?v=4"
+            alt=""
+          />
+          <p>Name:Aryan Thapa</p>
+          <p>Followers:3</p>
+          <p>Public Repos:27</p>
+        </div>
+      </div>
+      <button style="margin-top: 2rem" id="apiBtn">
+        Show Card with API details
+      </button>
+    </div>
+  </body>
+  <script>
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestUrl); //method and string methods added
+    //open has not been called yet
+    //tracking the statechange
+    let userName;
+    let followers;
+    let repoCount;
+    let imageUrl;
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText);
+        console.log(data);
+        userName = data.login;
+        followers = data.followers;
+        repoCount = data.public_repos;
+        imageUrl = data.avatar_url;
+      }
+    };
+    xhr.send();
+    const cardContainer = document.getElementById("cardContainer");
+    document.getElementById("apiBtn").addEventListener("click", () => {
+      const cardComponent = document.createElement("div");
+      cardComponent.classList.add("card");
+      cardComponent.style.cssText = `
+        background-color: aliceblue;
+            color: black;
+            width: 20rem;
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 25px;
+        `;
+        cardComponent.innerHTML=`
+        <h1>Your Github Info</h1>
+          <img
+            style="width: 10rem; height: 10rem; border-radius: 10px"
+            src=${imageUrl}
+            alt=""
+          />
+          <p>Username:${userName}</p>
+          <p>Followers:${followers}</p>
+          <p>Public Repos:${repoCount}</p>
+        `;
+      cardContainer.appendChild(cardComponent);
+    });
+    //now open will be called
+  </script>
+</html>
